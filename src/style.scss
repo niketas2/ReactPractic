@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+	display: flex;
+	justify-content: center;
+	background: #43168b;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	padding: 40px;
+}
+.content {
+	display: grid;
+	gap: 15px;
+	.question--block {
+		.question--title {
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			width: 339px;
+		}
+		.question--input {
+			width: 338px;
+			height: 31px;
+			border: 1px solid rgba(255, 255, 255, 0.8);
+			background-color: #43168b;
+			color: #ffffffcc;
+			padding-left: 11px;
+			box-sizing: border-box;
+			font-size: 14px;
+			outline: none;
+			&::placeholder {
+				color: rgba(255, 255, 255, 0.65);
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+	}
+	.send--btn {
+		justify-self: center;
+		margin-top: 20px;
+		width: 144px;
+		height: 34px;
+		flex-shrink: 0;
+		background: #fea133;
+		color: #000;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.15px;
+		border: none;
+		cursor: pointer;
+	}
+	.send--btn-hiden {
+		display: none;
+	}
+}
+.success {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 80vh;
+}
